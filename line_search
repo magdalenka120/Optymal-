@@ -1,0 +1,50 @@
+# Optymal-%--------------------------------------------------------------------------
+%-----------------------  Optymalizacja systemów  -------------------------
+%--------------------------------------------------------------------------
+% Zadanie 1: Detekcja twarzy
+% autorzy: A. Gonczarek, J.M. Tomczak
+% 2014
+%--------------------------------------------------------------------------
+
+function [eta L grad] = line_search(xTrain,yTrain,w0,L0,grad0,p,beta,alfa,eta0)
+% Funkcja wykonuje optymalizację w kierunku metodą backtracking line
+% search. Zwraca wyliczony parametr eta oraz wartość funkcji celu L i
+% gradient grad w punkcie w = w0 + eta * p.
+
+% xTrain - dane treningowe wejsciowe
+% yTrain - dane treningowe wyjsciowe (etykiety klas)
+% w0 - punkt startowy (bieżące parametry)
+% L0 - wartość funkcji celu w punckie w0
+% grad0 - wartość gradientu w punkcie w0
+% p - wektor określający przyjęty kierunek optymalizacji
+% beta - parametr beta algorytmu backtracking line search
+% alfa - parametr alfa algorytmu backtracking line search
+% eta0 - początkowy krok optymalizacji eta
+
+
+
+eta = eta0;
+w = w0 + eta .* p;
+[L,grad] = logistic_cost_function(xTrain,yTrain,w);
+
+
+%--------------------------------------------------------------------------
+%--------------------- TUTAJ WLASNA IMPLEMENTACJA -------------------------
+%--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------
+
+
+end
